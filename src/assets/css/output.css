@@ -945,6 +945,40 @@ video {
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F8F2C7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 242 199 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#\#FAF6C1\] {
+  background-color: ##FAF6C1;
+}
+
+.bg-\[\#FAF6C1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 246 193 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E1E1DD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 225 221 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#9D9D9A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(157 157 154 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#BAD1B0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 209 176 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#D7E4E3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 228 227 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/src\/assets\/images\/org\.webp\'\)\] {
   background-image: url('/src/assets/images/org.webp');
 }
