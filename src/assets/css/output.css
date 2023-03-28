@@ -945,6 +945,26 @@ video {
   background-image: url('/src/assets/images/parallax-one.webp');
 }
 
+.bg-\[url\(\'\.\.\/images\/images\.png\'\)\] {
+  background-image: url('../images/images.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/parallax-one\.webo\'\)\] {
+  background-image: url('../images/parallax-one.webo');
+}
+
+.bg-\[url\(\'\.\.\/images\/parallax-one\.webp\'\)\] {
+  background-image: url('../images/parallax-one.webp');
+}
+
+.bg-\[url\(\'\.\.\/images\/wed\.webp\'\)\] {
+  background-image: url('../images/wed.webp');
+}
+
+.bg-\[url\(\'\.\.\/images\/org\.webp\'\)\] {
+  background-image: url('../images/org.webp');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1540,6 +1560,11 @@ nav > ul > li {
 .after\:bg-\[url\(\'\/src\/assets\/images\/dots\.png\'\)\]::after {
   content: var(--tw-content);
   background-image: url('/src/assets/images/dots.png');
+}
+
+.after\:bg-\[url\(\'\.\.\/images\/dots\.png\'\)\]::after {
+  content: var(--tw-content);
+  background-image: url('../images/dots.png');
 }
 
 .after\:bg-repeat::after {
