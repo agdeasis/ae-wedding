@@ -1,0 +1,23 @@
+{
+  "name": "wedding-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agdeasis/wedding-web.git"
+  },
+  "author": "agdeasis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agdeasis/wedding-web/issues"
+  },
+  "homepage": "https://github.com/agdeasis/wedding-web#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
