@@ -1732,6 +1732,11 @@ nav > ul > li {
     font-size: 18px;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:after\:h-\[135\%\]::after {
     content: var(--tw-content);
     height: 135%;
