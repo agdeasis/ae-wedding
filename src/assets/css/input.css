@@ -219,6 +219,15 @@ nav > ul > li {
 
 /* end */
 
+.nav-link {
+  /* transition: 3s all; */
+}
+
+.nav-link.active {
+  color: #859b7d;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
   .custom-container {
     padding: 1rem;
