@@ -12,6 +12,7 @@ body {
   font-weight: 300;
   /* background-color: #eef0ed; */
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .text-primary {
