@@ -1612,30 +1612,28 @@
     <script src="src/assets//js/timer.js"></script>
     <script src="src/assets/js/aos.js"></script>
     <script>
-      // vegas
-      $("#vegas--slider").vegas({
-        slides: [
-          {
-            src: "src/assets/images/slider/img-001.jpg",
-          },
-          {
-            src: "src/assets/images/slider/img-002.jpg",
-          },
-          {
-            src: "src/assets/images/slider/img-003.jpg",
-          },
-          {
-            src: "src/assets/images/slider/img-004.jpg",
-          },
-        ],
-        transition: "fade2",
-        animation: "kenburnsUp",
-      });
-      //   end
-
       //   carousel
       $(document).ready(function () {
-        AOS.init();
+        // vegas
+        $("#vegas--slider").vegas({
+          slides: [
+            {
+              src: "src/assets/images/slider/img-001.jpg",
+            },
+            {
+              src: "src/assets/images/slider/img-002.jpg",
+            },
+            {
+              src: "src/assets/images/slider/img-003.jpg",
+            },
+            {
+              src: "src/assets/images/slider/img-004.jpg",
+            },
+          ],
+          transition: "fade2",
+          animation: "kenburnsUp",
+        });
+        //   end
 
         $(".owl-carousel").owlCarousel({
           loop: true,
@@ -1661,6 +1659,8 @@
             },
           },
         });
+
+        AOS.init();
       });
       // end
     </script>
