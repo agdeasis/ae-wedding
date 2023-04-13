@@ -958,6 +958,10 @@ video {
   background-image: url('../images/wed.webp');
 }
 
+.bg-\[url\(\'\.\.\/images\/bg-timeline\.jpg\'\)\] {
+  background-image: url('../images/bg-timeline.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
