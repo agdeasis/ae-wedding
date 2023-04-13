@@ -1643,7 +1643,8 @@
           dots: true,
           autoplay: true,
           responsiveClass: true,
-          autoplayTimeout: 8000,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
           items: 2,
           nav: false,
           responsive: {
@@ -1663,6 +1664,10 @@
         });
 
         AOS.init();
+
+        $("#sponsors").on("mouseenter", function (e) {
+          owl.trigger("owl.play", 1000);
+        });
       });
       // end
     </script>
