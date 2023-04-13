@@ -563,10 +563,6 @@ video {
   position: relative;
 }
 
-.-left-3 {
-  left: -0.75rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -577,6 +573,10 @@ video {
 
 .left-5 {
   left: 1.25rem;
+}
+
+.left-\[-38px\] {
+  left: -38px;
 }
 
 .top-0 {
@@ -1009,6 +1009,11 @@ video {
 .py-\[80px\] {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.py-\[2000px\] {
+  padding-top: 2000px;
+  padding-bottom: 2000px;
 }
 
 .pb-5 {
