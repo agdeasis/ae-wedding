@@ -57,6 +57,8 @@ nav > ul > li {
   display: flex !important;
   margin-top: 40px;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .owl-dot.active {
