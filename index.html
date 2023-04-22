@@ -1402,7 +1402,7 @@
                 <div
                   class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
                 >
-                  Misha Quiambao
+                  Miskha Quiambao
                 </div>
                 <div
                   class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
@@ -1975,11 +1975,13 @@
         });
         //   end
 
-        $(".owl-carousel").owlCarousel({
+        var owl = $(".owl-carousel");
+
+        owl.owlCarousel({
           loop: true,
           margin: 25,
           dots: true,
-          autoplay: true,
+          autoplay: false,
           responsiveClass: true,
           autoplayTimeout: 5000,
           autoplayHoverPause: true,
@@ -2003,9 +2005,13 @@
 
         // AOS.init();
 
-        // $("#sponsors").on("mouseenter", function (e) {
-        //   owl.trigger("owl.play", 1000);
-        // });
+        $("#sponsors").on("mouseenter", function (e) {
+          owl.trigger("play.owl.autoplay", [5000]);
+        });
+
+        $(".owl-stage").on("mouseleave", function () {
+          owl.trigger("stop.owl.autoplay");
+        });
       });
       // end
     </script>
