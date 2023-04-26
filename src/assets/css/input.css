@@ -12,6 +12,7 @@ body {
   font-weight: 300;
   /* background-color: #eef0ed; */
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .text-primary {
@@ -56,6 +57,8 @@ nav > ul > li {
   display: flex !important;
   margin-top: 40px;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .owl-dot.active {

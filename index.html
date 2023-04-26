@@ -10,13 +10,8 @@
     <link rel="stylesheet" href="src/assets/css/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="src/assets/css/fonts.css" />
+    <!-- <link rel="stylesheet" href="src/assets/css/aos.css" /> -->
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       rel="icon"
       href="src/assets/images/BrandLogo.png"
@@ -74,6 +69,11 @@
             <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#about-us">About Us</a></li>
             <li><a class="nav-link" href="#our-story">Our Story</a></li>
+            <li>
+              <a class="nav-link" href="#principal-sponsors"
+                >Primary Sponsors</a
+              >
+            </li>
             <li><a class="nav-link" href="#sponsors">Secondary Sponsors</a></li>
             <li><a class="nav-link" href="#timeline">Timeline</a></li>
             <li><a class="nav-link" href="#dresscode">Dress Code</a></li>
@@ -108,8 +108,12 @@
               class="custom-container h-screen flex justify-center items-center"
             >
               <div class="text-white text-center">
-                <h1 class="md:text-9xl text-8xl font-cali">Arnel & Erika</h1>
-                <h4 class="md:text-[18px] text-[15px] tracking-[5px]">
+                <h1 class="md:text-9xl text-8xl font-cali drop-shadow-2xl">
+                  Arnel & Erika
+                </h1>
+                <h4
+                  class="md:text-[18px] text-[15px] tracking-[5px] drop-shadow-2xl"
+                >
                   21 MAY, 2023 – APALIT PAMPANGA
                 </h4>
               </div>
@@ -121,9 +125,11 @@
         <div class="custom-container to-active" id="about-us">
           <div class="my-[90px] block mx-auto">
             <div class="md:flex md:space-x-8 space-x-0 md:space-y-0 space-y-8">
-              <div class="md:w-1/2 bg-white p-6">
+              <div class="md:w-1/2 bg-white p-6" data-aos="zoom-in-up">
                 <div class="flex lg:flex-row flex-col-reverse">
                   <div
+                    data-aos="fade-right"
+                    data-aos-delay="300"
                     class="lg:w-2/3 w-full md:text-center lg:text-right text-center p-4"
                   >
                     <h4 class="serif text-2xl">Arnel De Asis</h4>
@@ -131,12 +137,14 @@
                       >The Groom</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                   <div class="lg:w-1/3 w-full p-4">
                     <img
+                      data-aos="zoom-in"
+                      data-aos-delay="500"
                       src="src/assets/images/arnel.jpg"
                       alt=""
                       class="rounded-full max-w-full mx-auto block w-[150px]"
@@ -144,10 +152,16 @@
                   </div>
                 </div>
               </div>
-              <div class="md:w-1/2 bg-white p-6">
-                <div class="lg:flex md:flex-row flex-col-reverse">
+              <div class="md:w-1/2 bg-white p-6" data-aos="zoom-in-up">
+                <div
+                  class="lg:flex md:flex-row flex-col-reverse"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                >
                   <div class="lg:w-1/3 w-full p-4">
                     <img
+                      data-aos="zoom-in"
+                      data-aos-delay="500"
                       src="src/assets/images/erika.jpg"
                       alt=""
                       class="rounded-full max-w-full mx-auto block w-[150px]"
@@ -161,8 +175,8 @@
                       >The Bride</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -171,7 +185,7 @@
           </div>
 
           <!-- title -->
-          <div class="text-center">
+          <div class="text-center" data-aos="zoom-in-up" data-aos-delay="200">
             <h1
               class="text-primary font-bold lg:text-5xl text-center md:text-5xl text-[25px] mb-3"
             >
@@ -191,6 +205,7 @@
         >
           <div class="text-center text-white p-4">
             <h1
+              data-aos="zoom-out-down"
               class="font-cali lg:text-7xl text-center md:text-5xl text-4xl drop-shadow-lg"
             >
               Countdown to Forever
@@ -200,10 +215,30 @@
               id="timer"
               class="flex font-bold md:space-x-12 space-x-7 md:text-4xl text-3xl lg:text-6xl justify-center my-5"
             >
-              <div id="days" class="drop-shadow-lg"></div>
-              <div id="hours" class="drop-shadow-lg"></div>
-              <div id="minutes" class="drop-shadow-lg"></div>
-              <div id="seconds" class="drop-shadow-lg"></div>
+              <div
+                id="days"
+                class="drop-shadow-lg"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              ></div>
+              <div
+                id="hours"
+                class="drop-shadow-lg"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              ></div>
+              <div
+                id="minutes"
+                class="drop-shadow-lg"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              ></div>
+              <div
+                id="seconds"
+                class="drop-shadow-lg"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              ></div>
             </div>
           </div>
         </div>
@@ -221,22 +256,38 @@
                     src="src/assets/images/about.jpg"
                     class="max-w-full max-h-full block mx-auto w-[90%] relative z-10"
                     alt=""
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
                   />
                 </div>
               </div>
               <div class="md:w-1/2 p-4">
-                <span class="block font-cali text-4xl mb-0 text-primary"
+                <span
+                  class="block font-cali text-4xl mb-0 text-primary"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                   >Our Love</span
                 >
-                <span class="text-3xl uppercase serif font-normal"
+                <span
+                  class="text-3xl uppercase serif font-normal"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                   >Our Love Story</span
                 >
 
                 <div class="mt-6">
-                  <ol class="relative border-l border-gray-200">
-                    <li class="mb-10 ml-6">
+                  <ol
+                    class="relative border-l border-gray-200"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <li
+                      class="mb-10 ml-6"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full -left-3 ring-8 ring-white"
+                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full left-[-13px] ring-8 ring-white"
                       >
                         <svg
                           aria-hidden="true"
@@ -265,16 +316,20 @@
                       <p
                         class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
                       >
-                        A wonderful serenity has taken possession of my entire
-                        soul, like these sweet mornings of spring which I enjoy
-                        with my whole heart. I am alone, and feel the charm of
-                        existence in this spot, which was created for the bliss
-                        of souls like mine. I am so happy, my dear friend,
+                        Their courtship stage started when they were in 3rd year
+                        high school. As typical high school sweethearts, they
+                        were shy, and they seldom talk personally; they enjoy
+                        talking via text message exchanging “pick-up lines” that
+                        were very famous back then.
                       </p>
                     </li>
-                    <li class="mb-10 ml-6">
+                    <li
+                      class="mb-10 ml-6"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full -left-3 ring-8 ring-white"
+                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full left-[-13px] ring-8 ring-white"
                       >
                         <svg
                           aria-hidden="true"
@@ -300,14 +355,22 @@
                       <p
                         class="text-base font-normal text-gray-500 dark:text-gray-400"
                       >
-                        A wonderful serenity has taken possession of my entire
-                        soul, like these sweet mornings of spring which I enjoy
-                        with my whole heart.
+                        They became officially in a relationship after 1 year
+                        and 4 months of courtship. During their college days,
+                        they do not usually see each other because Erika studied
+                        in Manila while Arnel studied in Bulacan. However, they
+                        did not allow that situation to adversely affect their
+                        relationship. In fact, it made their relationship
+                        stronger.
                       </p>
                     </li>
-                    <li class="mb-10 ml-6">
+                    <li
+                      class="mb-10 ml-6"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
                       <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full -left-3 ring-8 ring-white"
+                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full left-[-13px] ring-8 ring-white"
                       >
                         <svg
                           aria-hidden="true"
@@ -333,13 +396,17 @@
                       <p
                         class="text-base font-normal text-gray-500 dark:text-gray-400"
                       >
-                        Get started with dozens of web components and
-                        interactive elements built on top of Tailwind CSS.
+                        After almost 10 years as boyfriend and girlfriend, Arnel
+                        proposed to Erika.
                       </p>
                     </li>
-                    <li class="mb-10 ml-6">
+                    <li
+                      class="mb-10 ml-6"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                    >
                       <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full -left-3 ring-8 ring-white"
+                        class="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full left-[-13px] ring-8 ring-white"
                       >
                         <svg
                           aria-hidden="true"
@@ -368,9 +435,8 @@
                       <p
                         class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
                       >
-                        A wonderful serenity has taken possession of my entire
-                        soul, like these sweet mornings of spring which I enjoy
-                        with my whole heart.
+                        This date marks the beginning of a lifetime with each
+                        other.
                       </p>
                     </li>
                   </ol>
@@ -381,19 +447,68 @@
         </div>
         <!-- end -->
 
-        <!-- secondary sponsons -->
-        <div class="pt-[100px] pb-[75px] to-active" id="sponsors">
+        <!-- principal sponsons -->
+        <div class="pt-[100px] to-active" id="principal-sponsors">
           <div class="custom-container">
-            <span class="block font-cali text-4xl mb-0 text-primary"
+            <span
+              class="block font-cali text-4xl md:text-left text-center mb-0 text-primary"
+              data-aos="fade-up"
+              >Primary Sponsors</span
+            >
+            <span
+              class="md:text-3xl block text-2xl md:text-left text-center serif font-normal uppercase"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              >Ninong & Ninang</span
+            >
+
+            <div id="principal-container" class="my-8 relative">
+              <div
+                class="md:flex md:mb-2 mb-4 relative z-2"
+                v-for="(ps,index) in principal_sponsors"
+                :key="index"
+              >
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p class="capitalize md:text-right text-center text-[20px]">
+                    <span class="font-cali text-[#859b7d]">Mr.</span>
+                    {{ps.ninong}}
+                  </p>
+                </div>
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p class="capitalize md:text-left text-center text-[20px]">
+                    <span class="font-cali text-[#859b7d]">
+                      {{ ps.ninang.includes("nancy") ||
+                      ps.ninang.includes("beatriz") ? 'Ms.' : 'Mrs.' }}
+                    </span>
+                    {{ps.ninang}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- secondary sponsons -->
+        <div class="pt-[100px] bg-white pb-[75px] to-active" id="sponsors">
+          <div class="custom-container">
+            <span
+              class="block font-cali text-4xl md:text-left text-center mb-0 text-primary"
+              data-aos="fade-up"
               >Secondary Sponsors</span
             >
-            <span class="md:text-3xl text-2xl serif font-normal uppercase"
+            <span
+              class="md:text-3xl block md:text-left text-center text-2xl serif font-normal uppercase"
+              data-aos="fade-up"
+              data-aos-delay="500"
               >Team Groom | Team Bride</span
             >
 
             <div class="owl-carousel my-8">
               <!-- jordan and joy -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+                data-aos="fade-right"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -410,14 +525,17 @@
                       >Best Man</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+                data-aos="fade-left"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -431,11 +549,11 @@
                   >
                     <h4 class="serif text-2xl">Jasmin Joy Silvestre</h4>
                     <span class="mb-3 block font-cali text-3xl text-primary"
-                      >Made of Honor</span
+                      >Maid of Honor</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -444,7 +562,10 @@
 
               <!-- geoff and angel -->
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+                data-aos="fade-right"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -461,14 +582,16 @@
                       >Best Man</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -482,11 +605,11 @@
                   >
                     <h4 class="serif text-2xl">Mary Angelene Silvestre</h4>
                     <span class="mb-3 block font-cali text-3xl text-primary"
-                      >Made of Honor</span
+                      >Maid of Honor</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -494,7 +617,9 @@
 
               <!-- end -->
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -511,14 +636,16 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -535,15 +662,17 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- via and ken -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -560,14 +689,16 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -584,8 +715,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -593,7 +724,9 @@
               <!-- end -->
 
               <!-- ivan dona -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -610,14 +743,16 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -634,8 +769,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -643,7 +778,9 @@
               <!-- end -->
 
               <!-- jhon penny -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -660,18 +797,20 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
-                      src="src/assets/images/GM/Penny.jpg"
+                      src="src/assets/images/GM/penyy_.jpg"
                       alt=""
                       class="rounded-full img-round max-w-full mx-auto block w-[150px]"
                     />
@@ -684,8 +823,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -693,7 +832,9 @@
               <!-- end -->
 
               <!-- jose majo -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -710,18 +851,20 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
-                      src="src/assets/images/GM/Majo.jpg"
+                      src="src/assets/images/GM/Majo_d.jpg"
                       alt=""
                       class="rounded-full img-round max-w-full mx-auto block w-[150px]"
                     />
@@ -734,8 +877,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -743,7 +886,9 @@
               <!-- end -->
 
               <!-- jose majo -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -760,18 +905,20 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
-                      src="src/assets/images/GM/Nika.jpg"
+                      src="src/assets/images/GM/Niks.jpg"
                       alt=""
                       class="rounded-full img-round max-w-full mx-auto block w-[150px]"
                     />
@@ -784,8 +931,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -793,7 +940,9 @@
               <!-- end -->
 
               <!-- jaime arveie -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -810,14 +959,16 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -834,8 +985,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -843,7 +994,9 @@
               <!-- end -->
 
               <!-- jaime arveie -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -860,14 +1013,16 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -884,8 +1039,8 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -893,7 +1048,9 @@
               <!-- end -->
 
               <!-- ganday and rhey -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -910,14 +1067,16 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -934,16 +1093,18 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
               <!-- end -->
 
-              <!-- ganday and rhey -->
-              <div class="o-item bg-white p-4">
+              <!-- rholly and rhey -->
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -960,18 +1121,20 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
-                      src="src/assets/images/GM/Fae.jpg"
+                      src="src/assets/images/GM/Fae_d.jpg"
                       alt=""
                       class="rounded-full img-round max-w-full mx-auto block w-[150px]"
                     />
@@ -984,8 +1147,62 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+
+              <!-- Billy and lara -->
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
+                <div class="lg:flex md:flex-row flex-col-reverse">
+                  <div class="lg:w-1/3 w-full p-4">
+                    <img
+                      src="src/assets/images/GM/Billy.jpg"
+                      alt=""
+                      class="rounded-full img-round max-w-full mx-auto block w-[150px]"
+                    />
+                  </div>
+                  <div
+                    class="lg:w-2/3 w-full md:text-text lg:text-left text-center p-4"
+                  >
+                    <h4 class="serif text-2xl">Joe Billy De Asis</h4>
+                    <span class="mb-3 block font-cali text-3xl text-primary"
+                      >Groomsman</span
+                    >
+                    <p>
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
+                <div class="lg:flex md:flex-row flex-col-reverse">
+                  <div class="lg:w-1/3 w-full p-4">
+                    <img
+                      src="src/assets/images/GM/Lara_d.jpg"
+                      alt=""
+                      class="rounded-full img-round max-w-full mx-auto block w-[150px]"
+                    />
+                  </div>
+                  <div
+                    class="lg:w-2/3 w-full md:text-text lg:text-left text-center p-4"
+                  >
+                    <h4 class="serif text-2xl">Lara Joy Dumlao</h4>
+                    <span class="mb-3 block font-cali text-3xl text-primary"
+                      >Bridesmaid</span
+                    >
+                    <p>
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
@@ -993,7 +1210,9 @@
               <!-- end -->
 
               <!-- rholly and fae -->
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
@@ -1010,18 +1229,20 @@
                       >Groomsman</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="o-item bg-white p-4">
+              <div
+                class="o-item bg-white p-4 shadow-xl border-solid border-[2px] border-[#ccc]"
+              >
                 <div class="lg:flex md:flex-row flex-col-reverse">
                   <div class="lg:w-1/3 w-full p-4">
                     <img
-                      src="src/assets/images/GM/Whena.jpg"
+                      src="src/assets/images/GM/Whenaa.jpg"
                       alt=""
                       class="rounded-full img-round max-w-full mx-auto block w-[150px]"
                     />
@@ -1034,14 +1255,205 @@
                       >Bridesmaid</span
                     >
                     <p>
-                      Olivia fringilla dui at elit finibus viverra thenec a
-                      lacus seda themo the miss druane semper non the fermen.
+                      <!-- Olivia fringilla dui at elit finibus viverra thenec a
+                      lacus seda themo the miss druane semper non the fermen. -->
                     </p>
                   </div>
                 </div>
               </div>
               <!-- end -->
             </div>
+
+            <!-- little -->
+
+            <div class="mt-[70px]">
+              <div class="md:flex mb-3">
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p
+                    class="capitalize md:text-right text-2xl text-center serif"
+                  >
+                    <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                      >little bride</span
+                    >
+                    <br />
+                    yunna guillermo
+                  </p>
+                </div>
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p class="capitalize md:text-left text-2xl text-center serif">
+                    <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                      >little groom</span
+                    >
+                    <br />
+                    prince ponce
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:flex mb-3">
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p
+                    class="capitalize md:text-right text-2xl text-center serif"
+                  >
+                    <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                      >ring bearer</span
+                    >
+                    <br />
+                    Khalex Siguenza
+                  </p>
+                </div>
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p class="capitalize md:text-left text-2xl text-center serif">
+                    <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                      >coin Bearer</span
+                    >
+                    <br />
+                    Prince Valdepeña
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:flex mb-3">
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p
+                    class="capitalize md:text-right text-2xl text-center serif"
+                  >
+                    <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                      >bible bearer</span
+                    >
+                    <br />
+                    Khalex Siguenza
+                  </p>
+                </div>
+                <div class="md:w-1/2 w-full px-2 md:px-5">
+                  <p class="capitalize md:text-left text-2xl text-center serif">
+                    <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                      >Banner Bearer</span
+                    >
+                    <br />
+                    Uno Tomabine
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="capitalize mt-10 text-2xl text-center serif">
+              <span class="font-cali capitalize text-4xl text-[#859b7d]"
+                >flower girls & escorts</span
+              >
+              <br />
+            </p>
+
+            <div class="max-w-[800px] block mx-auto mt-5">
+              <div class="lg:flex text-center md:mb-2 mb-4">
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  queenie Valdepeña
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Ethan Galang
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Francine De Asis
+                </div>
+              </div>
+              <div class="lg:flex text-center md:mb-2 mb-4">
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Collin Dela Cruz
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Dave Matalote
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Maxine Escullar
+                </div>
+              </div>
+
+              <div class="lg:flex text-center md:mb-2 mb-4">
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Elisha De Asis
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Jeremiah Lopez
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Nathalia Tolentino
+                </div>
+              </div>
+
+              <div class="lg:flex text-center md:mb-2 mb-4">
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Zoey Galang
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Zayn Vasquez
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Lexi Galang
+                </div>
+              </div>
+
+              <div class="lg:flex text-center md:mb-2 mb-4">
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Miskha Quiambao
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Anreb Lopez
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Gieana Velilla
+                </div>
+              </div>
+
+              <div class="lg:flex text-center md:mb-2 mb-4">
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Kenrah Lopez
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Tristan Galang
+                </div>
+                <div
+                  class="lg:1/3 w-full px-2 md:px-1 capitalize serif text-2xl"
+                >
+                  Zyrine Galang
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
           </div>
         </div>
         <!-- end -->
@@ -1053,12 +1465,17 @@
           <div class="text-center text-white p-4">
             <h1
               class="font-cali lg:text-7xl text-center md:text-5xl text-4xl drop-shadow-lg"
+              data-aos="zoom-out-down"
             >
               Forever starts on ...
             </h1>
 
             <h1 class="font-bold lg:text-7xl md:text-md-5xl text-3xl">
-              05.21.2023
+              <span data-aos="fade-up" data-aos-delay="200">05</span>.<span
+                data-aos="fade-up"
+                data-aos-delay="400"
+                >21</span
+              >.<span data-aos="fade-up" data-aos-delay="600">2023</span>
             </h1>
           </div>
         </div>
@@ -1067,129 +1484,144 @@
         <!-- Wedding Timeline -->
         <div class="py-[100px] to-active" id="timeline">
           <div class="custom-container">
-            <span class="block font-cali text-4xl mb-0 text-primary"
+            <span
+              class="block md:text-left text-center font-cali text-4xl mb-0 text-primary"
+              data-aos="fade-up"
               >Wedding</span
             >
-            <span class="text-3xl serif font-normal uppercase">TIMELINE</span>
+            <span
+              class="text-3xl block md:text-left text-center serif font-normal uppercase"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              >TIMELINE</span
+            >
 
             <div
-              class="flex mt-10 bg-[url('../images/org.webp')] bg-no-repeat bg-cover bg-top flex-wrap"
+              class="flex mt-10 bg-[url('../images/bg-timeline.jpg')] bg-no-repeat bg-cover bg-top flex-wrap"
             >
               <div
-                class="lg:w-1/4 md:w-1/2 timeline-col lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
+                class="lg:w-1/4 md:w-1/2 timeline-col w-full lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
               >
-                <img
-                  src="src/assets/images/timeline/wedding-rings.png"
-                  class="w-[70px] block mx-auto lg:mx-0"
-                  alt=""
-                />
-
-                <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
-                  Wedding Ceremony
-                </h2>
-
-                <div
-                  class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
-                >
+                <div data-aos="fade-up">
                   <img
-                    src="src/assets/images/clock-solid.svg"
-                    class="mr-2 blo"
+                    src="src/assets/images/timeline/wedding-rings.png"
+                    class="w-[70px] block mx-auto lg:mx-0"
                     alt=""
                   />
-                  02:00 PM - 04:00 PM
-                </div>
 
-                <p class="text-[15px] text-gray-500 mt-4">
-                  Short description here. A wonderful serenity has taken
-                  possession of my entire soul.
-                </p>
+                  <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
+                    Wedding Ceremony
+                  </h2>
+
+                  <div
+                    class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
+                  >
+                    <img
+                      src="src/assets/images/clock-solid.svg"
+                      class="mr-2 blo"
+                      alt=""
+                    />
+                    02:00 PM - 04:00 PM
+                  </div>
+
+                  <p class="text-[15px] text-gray-500 mt-4">
+                    Guests especially the entourage are requested to arrive
+                    early and observe the __ of the ceremony.
+                  </p>
+                </div>
               </div>
               <div
-                class="lg:w-1/4 md:w-1/2 timeline-col lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
+                class="lg:w-1/4 md:w-1/2 timeline-col w-full lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
               >
-                <img
-                  src="src/assets/images/timeline/camera.png"
-                  class="w-[70px] block mx-auto lg:mx-0"
-                  alt=""
-                />
-
-                <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
-                  Photo Session
-                </h2>
-
-                <div
-                  class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
-                >
+                <div data-aos="fade-up" data-aos-delay="200">
                   <img
-                    src="src/assets/images/clock-solid.svg"
-                    class="mr-2 blo"
+                    src="src/assets/images/timeline/camera.png"
+                    class="w-[70px] block mx-auto lg:mx-0"
                     alt=""
                   />
-                  04:00 PM - 05:00 PM
-                </div>
 
-                <p class="text-[15px] text-gray-500 mt-4">
-                  Short description here. A wonderful serenity has taken
-                  possession of my entire soul.
-                </p>
+                  <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
+                    Photo Session
+                  </h2>
+
+                  <div
+                    class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
+                  >
+                    <img
+                      src="src/assets/images/clock-solid.svg"
+                      class="mr-2 blo"
+                      alt=""
+                    />
+                    04:00 PM - 05:00 PM
+                  </div>
+
+                  <p class="text-[15px] text-gray-500 mt-4">
+                    ‘Post-nup’ as they call it; it will take a while but surely,
+                    these pictures will be worthwhile.
+                  </p>
+                </div>
               </div>
               <div
-                class="lg:w-1/4 md:w-1/2 timeline-col lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
+                class="lg:w-1/4 md:w-1/2 timeline-col w-full lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
               >
-                <img
-                  src="src/assets/images/timeline/restaurant.png"
-                  class="w-[70px] block mx-auto lg:mx-0"
-                  alt=""
-                />
-
-                <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
-                  Early Dinner
-                </h2>
-
-                <div
-                  class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
-                >
+                <div data-aos="fade-up" data-aos-delay="400">
                   <img
-                    src="src/assets/images/clock-solid.svg"
-                    class="mr-2 blo"
+                    src="src/assets/images/timeline/restaurant.png"
+                    class="w-[70px] block mx-auto lg:mx-0"
                     alt=""
                   />
-                  05:00 PM - 06:00 PM
-                </div>
 
-                <p class="text-[15px] text-gray-500 mt-4">
-                  Short description here. A wonderful serenity has taken
-                  possession of my entire soul.
-                </p>
+                  <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
+                    Early Dinner
+                  </h2>
+
+                  <div
+                    class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
+                  >
+                    <img
+                      src="src/assets/images/clock-solid.svg"
+                      class="mr-2 blo"
+                      alt=""
+                    />
+                    05:00 PM - 06:00 PM
+                  </div>
+
+                  <p class="text-[15px] text-gray-500 mt-4">
+                    Enjoy the early dinner prepared by Silvestre's Events and
+                    Exquisite Style.
+                  </p>
+                </div>
               </div>
               <div
-                class="lg:w-1/4 md:w-1/2 timeline-col lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
+                class="lg:w-1/4 md:w-1/2 timeline-col w-full lg:text-left text-center bg-white md:px-6 px-7 border-solid border-[0.5px] border-[#ccc] hover:bg-[#00000078] hover:color-[#fff] transition-all duration-500 py-[70px]"
               >
-                <img
-                  src="src/assets/images/timeline/music.png"
-                  class="w-[70px] block mx-auto lg:mx-0"
-                  alt=""
-                />
-
-                <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
-                  Program & Party
-                </h2>
-
-                <div
-                  class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
-                >
+                <div data-aos="fade-up" data-aos-delay="600">
                   <img
-                    src="src/assets/images/clock-solid.svg"
-                    class="mr-2 blo"
+                    src="src/assets/images/timeline/music.png"
+                    class="w-[70px] block mx-auto lg:mx-0"
                     alt=""
                   />
-                  06:00 PM onwards
-                </div>
 
-                <p class="text-[15px] text-gray-500 mt-4">
-                  Short description here. A wonderful serenity has taken
-                  possession of my entire soul.
-                </p>
+                  <h2 class="serif text-[18px] font-bold uppercase mt-2 mb-4">
+                    Program & Party
+                  </h2>
+
+                  <div
+                    class="items-center mt-4 mb-2 text-sm lg:justify-start justify-center font-normal leading-none text-gray-400 flex"
+                  >
+                    <img
+                      src="src/assets/images/clock-solid.svg"
+                      class="mr-2 blo"
+                      alt=""
+                    />
+                    06:00 PM onwards
+                  </div>
+
+                  <p class="text-[15px] text-gray-500 mt-4">
+                    The couple hopes that everyone stays during the program and
+                    be with them as they enjoy the celebration
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -1199,10 +1631,17 @@
         <!-- Wedding Dresscode -->
         <div class="py-[100px] bg-white to-active" id="dresscode">
           <div class="custom-container">
-            <span class="block font-cali text-4xl mb-0 text-primary"
-              >Wedding</span
+            <span
+              class="block md:text-left text-center font-cali text-4xl mb-0 text-primary"
+              data-aos="fade-up"
+              >Attire &</span
             >
-            <span class="text-3xl serif font-normal uppercase">DRESSCODE</span>
+            <span
+              class="text-3xl block md:text-left text-center serif font-normal uppercase"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              >DRESSCODE</span
+            >
             <div
               class="md:flex space-x-0 md:space-x-2 mt-10 md:text-left text-center"
             >
@@ -1211,16 +1650,19 @@
                   src="src/assets/images/dresscode.png"
                   class="max-w-full max-h-full block mx-auto"
                   alt=""
+                  data-aos="zoom-in"
                 />
               </div>
               <div class="md:w-1/2 p-4">
                 <span
-                  class="block font-cali md:text-4xl text-2xl mb-0 text-primary"
-                  >Principal Sponsors ( <small>NINANG</small> )</span
-                >
-                <div class="mt-5">
+                  data-aos="fade-up"
+                  class="block font-cali md:text-4xl text-3xl mb-0 text-primary"
+                  >Principal Sponsors <small class="serif">( NINANG )</small>
+                </span>
+                <div data-aos="fade-up" data-aos-delay="200" class="mt-5">
                   <span class="md:text-2xl text-1xl uppercase serif font-normal"
-                    >Modern Filipiniana</span
+                    >Modern Filipiniana <span class="lowercase">or</span> Long
+                    Gown</span
                   >
                   <div class="my-5 flex md:justify-start justify-center">
                     <div
@@ -1234,10 +1676,12 @@
 
                 <!-- ninang -->
                 <span
-                  class="block font-cali md:text-4xl text-2xl mb-0 text-primary"
-                  >Principal Sponsors ( <small>NINONG</small> )</span
+                  data-aos="fade-up"
+                  class="block font-cali md:text-4xl text-3xl mb-0 text-primary"
+                  >Principal Sponsors
+                  <small class="serif">( NINONG )</small></span
                 >
-                <div class="mt-5">
+                <div data-aos="fade-up" data-aos-delay="200" class="mt-5">
                   <span class="md:text-2xl text-1xl uppercase serif font-normal"
                     >Barong Tagalog</span
                   >
@@ -1254,10 +1698,11 @@
 
                 <!-- guest -->
                 <span
-                  class="block font-cali md:text-4xl text-2xl mb-0 text-primary"
+                  data-aos="fade-up"
+                  class="block font-cali md:text-4xl text-3xl mb-0 text-primary"
                   >Guests</span
                 >
-                <div class="mt-5">
+                <div data-aos="fade-up" data-aos-delay="200" class="mt-5">
                   <span class="md:text-2xl text-1xl uppercase serif font-normal"
                     >Semi-formal Attire</span
                   >
@@ -1284,12 +1729,19 @@
         <!-- end -->
 
         <!-- location -->
-        <div class="py-[100px] to-active" id="location">
+        <div class="py-[100px] to-active overflow-x-hidden" id="location">
           <div class="custom-container">
-            <span class="block font-cali text-4xl mb-0 text-primary"
-              >Wedding</span
+            <span
+              class="block md:text-left text-center font-cali text-4xl mb-0 text-primary"
+              data-aos="fade-up"
+              >Events Schedule &
+            </span>
+            <span
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="text-3xl block md:text-left text-center serif font-normal uppercase"
+              >Locations</span
             >
-            <span class="text-3xl serif font-normal uppercase">Locations</span>
 
             <div class="md:flex md:space-x-10 mt-10 mb-5">
               <div class="md:w-1/3 md:p-0 p-3">
@@ -1297,16 +1749,21 @@
                   src="src/assets/images/puricos.jpeg"
                   class="max-w-full max-h-full mx-auto block"
                   alt=""
+                  data-aos="zoom-in"
                 />
               </div>
-              <div class="md:w-2/3 md:p-0 p-3">
+              <div
+                class="md:w-2/3 md:p-0 p-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <h3
-                  class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+                  class="flex items-center md:justify-start justify-center mb-1 text-lg font-semibold text-gray-900"
                 >
                   Preparation - Purico’s Cabin Resort
                 </h3>
                 <div
-                  class="items-center mt-4 text-sm font-normal leading-none text-gray-400 flex"
+                  class="items-center md:justify-start justify-center mt-4 text-sm font-normal leading-none text-gray-400 flex"
                 >
                   <img
                     src="src/assets/images/location-dot-solid.svg"
@@ -1316,7 +1773,7 @@
                   0026 Sitio Camia, Apalit, 2016 Pampanga
                 </div>
                 <div
-                  class="items-center mt-4 mb-2 text-sm font-normal leading-none text-gray-400 flex"
+                  class="items-center md:justify-start justify-center mt-4 mb-2 text-sm font-normal leading-none text-gray-400 flex"
                 >
                   <img
                     src="src/assets/images/clock-solid.svg"
@@ -1328,17 +1785,17 @@
                 <p
                   class="my-4 text-base font-normal text-gray-500 dark:text-gray-400"
                 >
-                  A wonderful serenity has taken possession of my entire soul,
+                  <!-- A wonderful serenity has taken possession of my entire soul,
                   like these sweet mornings of spring which I enjoy with my
                   whole heart. I am alone, and feel the charm of existence in
                   this spot, which was created for the bliss of souls like mine.
-                  I am so happy, my dear friend,
+                  I am so happy, my dear friend, -->
                 </p>
 
                 <a
                   href="https://www.facebook.com/puricoscabinresort"
                   target="_blank"
-                  class="flex items-center md:my-10 my-5 text-[20px] font-bold text-primary"
+                  class="flex items-center md:justify-start justify-center md:my-10 my-5 text-[20px] font-bold text-primary"
                   >Visit Page
                   <img
                     class="ml-2 self-center"
@@ -1354,16 +1811,21 @@
                   src="src/assets/images/divina.jpg"
                   class="max-w-full max-h-full mx-auto block"
                   alt=""
+                  data-aos="zoom-in"
                 />
               </div>
-              <div class="md:w-2/3 md:p-0 p-3">
+              <div
+                class="md:w-2/3 md:p-0 p-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <h3
-                  class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+                  class="flex items-center md:text-left text-center md:justify-start justify-center mb-1 text-lg font-semibold text-gray-900"
                 >
                   Ceremony - Nuestra Senora de la Divina Pastora Parish Church
                 </h3>
                 <div
-                  class="items-center mt-4 text-sm font-normal leading-none text-gray-400 flex"
+                  class="items-center md:justify-start justify-center mt-4 text-sm font-normal leading-none text-gray-400 flex"
                 >
                   <img
                     src="src/assets/images/location-dot-solid.svg"
@@ -1373,7 +1835,7 @@
                   Cetro Balucuc, Apalit, Pampanga
                 </div>
                 <div
-                  class="items-center mt-4 mb-2 text-sm font-normal leading-none text-gray-400 flex"
+                  class="items-center md:justify-start justify-center mt-4 mb-2 text-sm font-normal leading-none text-gray-400 flex"
                 >
                   <img
                     src="src/assets/images/clock-solid.svg"
@@ -1385,17 +1847,17 @@
                 <p
                   class="my-4 text-base font-normal text-gray-500 dark:text-gray-400"
                 >
-                  A wonderful serenity has taken possession of my entire soul,
+                  <!-- A wonderful serenity has taken possession of my entire soul,
                   like these sweet mornings of spring which I enjoy with my
                   whole heart. I am alone, and feel the charm of existence in
                   this spot, which was created for the bliss of souls like mine.
-                  I am so happy, my dear friend,
+                  I am so happy, my dear friend, -->
                 </p>
 
                 <a
                   href="https://www.facebook.com/DivinaPastoraParish1940/"
                   target="_blank"
-                  class="flex items-center md:my-10 my-5 text-[20px] font-bold text-primary"
+                  class="flex items-center md:justify-start justify-center md:my-10 my-5 text-[20px] font-bold text-primary"
                   >Visit Page
                   <img
                     class="ml-2 self-center"
@@ -1411,26 +1873,31 @@
                   src="src/assets/images/mula.jpg"
                   class="max-w-full max-h-full mx-auto block"
                   alt=""
+                  data-aos="zoom-in"
                 />
               </div>
-              <div class="md:w-2/3 md:p-0 p-3">
+              <div
+                class="md:w-2/3 md:p-0 p-3 text-center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <h3
-                  class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+                  class="flex items-center mb-1 text-lg md:justify-start justify-center font-semibold text-gray-900"
                 >
-                  Reception - Mula De Vergara Resort
+                  Reception - Mula De Vergara Resort & Events Place
                 </h3>
                 <div
-                  class="items-center mt-4 text-sm font-normal leading-none text-gray-400 flex"
+                  class="items-center md:justify-start justify-center mt-4 text-sm font-normal leading-none text-gray-400 flex"
                 >
                   <img
                     src="src/assets/images/location-dot-solid.svg"
                     class="mr-2"
                     alt=""
                   />
-                  Cabio Bacal Balucuc, Apalit, Pampanga
+                  213 Pulong Mañiego, Cabio Bakal, Balucuc, Apalit Pampanga
                 </div>
                 <div
-                  class="items-center mt-4 mb-2 text-sm font-normal leading-none text-gray-400 flex"
+                  class="items-center md:justify-start justify-center mt-4 mb-2 text-sm font-normal leading-none text-gray-400 flex"
                 >
                   <img
                     src="src/assets/images/clock-solid.svg"
@@ -1442,17 +1909,17 @@
                 <p
                   class="my-4 text-base font-normal text-gray-500 dark:text-gray-400"
                 >
-                  A wonderful serenity has taken possession of my entire soul,
+                  <!-- A wonderful serenity has taken possession of my entire soul,
                   like these sweet mornings of spring which I enjoy with my
                   whole heart. I am alone, and feel the charm of existence in
                   this spot, which was created for the bliss of souls like mine.
-                  I am so happy, my dear friend,
+                  I am so happy, my dear friend, -->
                 </p>
 
                 <a
                   href="https://www.facebook.com/DivinaPastoraParish1940/"
                   target="_blank"
-                  class="flex items-center md:my-10 my-5 text-[20px] font-bold text-primary"
+                  class="flex items-center md:justify-start justify-center md:my-10 my-5 text-[20px] font-bold text-primary"
                   >Visit Page
                   <img
                     class="ml-2 self-center"
@@ -1468,25 +1935,35 @@
 
         <!--  -->
         <!-- footer -->
-        <footer class="overflow-x-hidden py-[80px] bg-fixed bg-white">
+        <footer
+          class="overflow-x-hidden py-[80px] bg-fixed bg-white overflow-y-hidden"
+        >
           <div class="text-center p-4">
             <img
               src="src/assets/images/BrandLogo.png"
               class="max-w-full h-[100px] block mx-auto m-2"
               alt=""
+              data-aos="zoom-in"
             />
             <h1
               class="font-cali lg:text-4xl text-center md:text-2xl text-2xl drop-shadow-lg"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               Arnel & Erika
             </h1>
 
-            <h1 class="text-1xl">
+            <h1 class="text-1xl" data-aos="fade-up" data-aos-delay="400">
               May 21, 2023 | 2:00 PM - Balucuc Apalit Pampanga
             </h1>
           </div>
         </footer>
         <!-- end -->
+
+        <!-- 
+          Inspired Template : https://themeforest.net/item/ (Olivia&Enrico)
+          Credit to: https://themeforest.net/
+         -->
       </div>
     </main>
     <!-- <script src="https://code.jquery.com/jquery.min.js"></script> -->
@@ -1495,37 +1972,42 @@
     <script src="src/assets/js/owl.carousel.js"></script>
     <script src="src/assets//js/scrip.js"></script>
     <script src="src/assets//js/timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- <script src="src/assets/js/aos.js"></script> -->
     <script>
-      // vegas
-      $("#vegas--slider").vegas({
-        slides: [
-          {
-            src: "src/assets/images/slider/img-001.jpg",
-          },
-          {
-            src: "src/assets/images/slider/img-002.jpg",
-          },
-          {
-            src: "src/assets/images/slider/img-003.jpg",
-          },
-          {
-            src: "src/assets/images/slider/img-004.jpg",
-          },
-        ],
-        transition: "fade2",
-        animation: "kenburnsUp",
-      });
-      //   end
-
       //   carousel
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        // vegas
+        $("#vegas--slider").vegas({
+          slides: [
+            {
+              src: "src/assets/images/slider/img-007.jpg",
+            },
+            {
+              src: "src/assets/images/slider/img-005.jpg",
+            },
+            {
+              src: "src/assets/images/slider/img-002.jpg",
+            },
+            {
+              src: "src/assets/images/slider/img-006.jpg",
+            },
+          ],
+          transition: "fade2",
+          animation: "kenburnsUp",
+        });
+        //   end
+
+        var owl = $(".owl-carousel");
+
+        owl.owlCarousel({
           loop: true,
           margin: 25,
           dots: true,
-          autoplay: true,
+          autoplay: false,
           responsiveClass: true,
-          autoplayTimeout: 8000,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
           items: 2,
           nav: false,
           responsive: {
@@ -1543,8 +2025,40 @@
             },
           },
         });
+
+        // AOS.init();
+
+        $("#sponsors").on("mouseenter", function (e) {
+          owl.trigger("play.owl.autoplay", [5000]);
+        });
+
+        // $(".owl-stage").on("mouseleave", function () {
+        //   owl.trigger("stop.owl.autoplay");
+        // });
       });
       // end
+    </script>
+
+    <script>
+      new Vue({
+        el: "#principal-container",
+        data: {
+          principal_sponsors: [],
+        },
+
+        mounted() {
+          this.fetchData();
+        },
+
+        methods: {
+          async fetchData() {
+            const response = await fetch("src/assets/sponsors.json");
+            const data = await response.json();
+
+            this.principal_sponsors = data.data;
+          },
+        },
+      });
     </script>
   </body>
 </html>
